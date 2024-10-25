@@ -19,7 +19,7 @@ csv_file = "ihub.csv"
 # Check if the form has been submitted
 if submit_button:
     # Create a dictionary to store the user data
-    user_data = {"Name": name, "Age": age, "height": height,"weight":weight}
+    ihub = {"Name": name, "Age": age, "height": height,"weight":weight}
 
     # Check if the CSV file exists
     if not os.path.exists(csv_file):
