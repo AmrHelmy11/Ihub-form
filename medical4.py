@@ -14,7 +14,7 @@ with st.form("user_data_form"):
     submit_button = st.form_submit_button("Submit")
 
 # Create a CSV file to store the user data
-csv_file = "user_data.csv"
+csv_file = "ihub.csv"
 
 # Check if the form has been submitted
 if submit_button:
@@ -27,7 +27,7 @@ if submit_button:
         pd.DataFrame(columns=["Name", "Age" , "height","weight"]).to_csv(csv_file, index=False)
 
     # Append the new user data to the CSV file
-    pd.DataFrame([user_data]).to_csv(csv_file, mode="a", header=False, index=False)
+    pd.DataFrame([ihub]).to_csv(csv_file, mode="a", header=False, index=False)
 
     # Display a success message
     st.success("Data submitted successfully!")
